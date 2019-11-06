@@ -4,7 +4,13 @@ dotfiles for mac.
 
 ## install
 
-* tpm
-* kak-lsp
-* plug.kak
-* fisher
+* tmux
+  * [tpm](https://github.com/tmux-plugins/tpm)
+* kakoune
+  * [kak-lsp](https://github.com/ul/kak-lsp)
+  * [plug.kak](https://github.com/andreyorst/plug.kak)
+* fish
+  * [fisher](https://github.com/jorgebucaran/fisher)
+* ranger
+* tig
+* fzf
