@@ -14,3 +14,7 @@ dotfiles for mac.
 * ranger
 * tig
 * fzf
+
+## deprecated
+* nvim
+* zsh
