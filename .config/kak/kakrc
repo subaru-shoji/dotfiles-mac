@@ -1,0 +1,17 @@
+source "%val{config}/plugins/plug.kak/rc/plug.kak"
+
+plug 'andreyorst/plug.kak' noload
+plug 'ul/kak-lsp'
+plug 'andreyorst/fzf.kak'
+plug 'alexherbo2/auto-pairs.kak'
+
+add-highlighter global/ number-lines
+
+colorscheme solarized-dark
+
+hook global WinCreate .* %{
+      auto-pairs-enable
+      lsp-enable
+}
+
+map global normal <c-p> ': fzf-mode<ret>'
