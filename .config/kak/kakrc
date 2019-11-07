@@ -7,11 +7,14 @@ plug 'alexherbo2/auto-pairs.kak'
 
 add-highlighter global/ number-lines
 
-colorscheme solarized-dark
+colorscheme base16
 
 hook global WinCreate .* %{
       auto-pairs-enable
       lsp-enable
 }
+
+hook global ModeChange ".*:normal" %{ face global PrimaryCursor black,white+fg }
+hook global ModeChange ".*:insert" %{ face global PrimaryCursor black,green+fg }
 
 map global normal <c-p> ': fzf-mode<ret>'
